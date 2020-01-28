@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Oleo+Script|Poppins:400,500,700&display=swap');
+
+   
+
+@import 'normalize';
+@import 'mixins';
+@import 'variables';
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    font-size: 10px;
+}
+body {
+    min-height: 100%;
+    font: 400 1.5rem/1.6 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+#map{
+    min-height: 100vh;
+}
+// #warnings-panel {
+//     width: 100%;
+//     height:10%;
+//     text-align: center;
+// }
+.map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // &__container {
+
+    //     width: 70%;
+    // }
+    &__map {
+        width: 70%;
+    }
+    &__nav {
+        width: 30%;
+        background-color: $green;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100vh;
+        padding: 20px 0;
+        outline: 1px solid red;
+        & * + * {
+            margin-top: 30px;
+        }
+        & * {
+            font-size: 2rem;
+            padding: 10px 5px;
+        }
+    }
+
+}
+

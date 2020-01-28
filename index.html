@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Google map</title>
+</head>
+<body>
+    <section class="map">
+            <div id="map" class="map__map"></div>
+        <nav class="map__nav">
+            <input type="text" name="firstAddress" id="firstAddress" placeholder="Введите первый адресс">
+            <input type="text" name="secondAddress" id="secondAddress" placeholder="Введите второй адресс" value="rome">
+            <button class="btn" id="search">Искать</button>
+        </nav>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJjLItEmcoCaVbZ7273yC8nIkBxlYtp0Y&callback=initMap" async defer></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/script-map.js"></script>
+</body>
+</html>
